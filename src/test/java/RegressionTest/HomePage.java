@@ -32,6 +32,7 @@ public class HomePage extends Base {
 	    System.out.println("This is first commit");
 	    System.out.println("This is asian guy commit");
 	    System.out.println("The method is to getText");
+	    System.out.println("This is additional branch");
 	}
 	
 	@AfterTest
