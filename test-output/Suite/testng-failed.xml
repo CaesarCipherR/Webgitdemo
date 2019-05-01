@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="RegressionTest.listeners"/>
+    <listener class-name="resources.ExtentReporterNG"/>
+  </listeners>
+  <test name="Validating User Login">
+    <classes>
+      <class name="RegressionTest.HomePage"/>
+    </classes>
+  </test> <!-- Validating User Login -->
+  <test name="App Test">
+    <classes>
+      <class name="RegressionTest.AppTest"/>
+    </classes>
+  </test> <!-- App Test -->
+  <test name="Validate Title">
+    <classes>
+      <class name="RegressionTest.validateTitle"/>
+    </classes>
+  </test> <!-- Validate Title -->
+  <test name="Validate Navigation Bar">
+    <classes>
+      <class name="RegressionTest.validateNavigationBar"/>
+    </classes>
+  </test> <!-- Validate Navigation Bar -->
+  <test name="Validate Title(failed)">
+    <classes>
+      <class name="RegressionTest.validateNavigationBar">
+        <methods>
+          <include name="initialize"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- RegressionTest.validateNavigationBar -->
+      <class name="RegressionTest.HomePage">
+        <methods>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- RegressionTest.HomePage -->
+      <class name="RegressionTest.validateTitle">
+        <methods>
+          <include name="initialize"/>
+          <include name="teardown"/>
+          <include name="validateAppTitle"/>
+        </methods>
+      </class> <!-- RegressionTest.validateTitle -->
+    </classes>
+  </test> <!-- Validate Title(failed) -->
+</suite> <!-- Failed suite [Suite] -->

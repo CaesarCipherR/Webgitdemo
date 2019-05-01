@@ -1,0 +1,8 @@
+17:34:02.301 [main] INFO  resources.Base - Navigated to the home page
+17:34:14.830 [main] INFO  resources.Base - None Restricitive User
+17:34:39.135 [main] INFO  resources.Base - Driver is initialized
+17:34:59.079 [main] INFO  resources.Base - Navigated to the home page
+17:35:02.658 [main] INFO  resources.Base - Restrictive User
+17:35:24.423 [main] INFO  resources.Base - Driver is initialized
+17:35:33.345 [main] INFO  resources.Base - Navigated to the home page
+17:35:37.299 [main] INFO  resources.Base - Successfully validated title

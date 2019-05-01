@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+    <listeners>
+        <listener class-name="RegressionTest.listeners"></listener>
+        <listener class-name="resources.ExtentReporterNG"></listener>
+    </listeners>
+  <test name="Validating User Login">
+    <classes>
+      <class name="RegressionTest.HomePage"/>
+      </classes>
+      </test>
+      <test name = "App Test">
+          <classes>
+      <class name="RegressionTest.AppTest"/>
+      </classes>
+      </test>
+      <test name = "Validate Title">
+          <classes>
+      <class name="RegressionTest.validateTitle"/>
+      </classes>
+      </test>
+      <test name = "Validate Navigation Bar">
+          <classes>
+      <class name="RegressionTest.validateNavigationBar"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
