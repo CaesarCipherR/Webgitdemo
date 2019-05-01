@@ -28,10 +28,6 @@ public class HomePage extends Base {
 	    log.info(text);
 	    LoginPage l = new LoginPage(driver);
 	    l.getLogin().click();
-	    System.out.println("git changes");
-	    System.out.println("This is first commit");
-	    System.out.println("This is asian guy commit");
-	    System.out.println("The method is to getText");
 	}
 	
 	@AfterTest

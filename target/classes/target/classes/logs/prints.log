@@ -1,0 +1,3 @@
+17:35:50.099 [main] INFO  resources.Base - Driver is initialized
+17:36:08.741 [main] INFO  resources.Base - Navigated to the home page
+17:36:09.352 [main] INFO  resources.Base - Successfully validated Navigation Bar

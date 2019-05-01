@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" total="4" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="133929" started-at="2019-04-30T21:13:14Z" finished-at="2019-04-30T21:15:28Z">
+    <groups>
+    </groups>
+    <test name="Validating User Login" duration-ms="79447" started-at="2019-04-30T21:13:14Z" finished-at="2019-04-30T21:14:34Z">
+      <class name="RegressionTest.HomePage">
+        <test-method status="PASS" signature="basePageNavigation(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:RegressionTest.HomePage@34b7ac2f]" name="basePageNavigation" duration-ms="41873" started-at="2019-04-30T17:13:14Z" data-provider="getData" finished-at="2019-04-30T17:13:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[nonerestrictiveuser@facebook.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123456]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[None Restricitive User]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- basePageNavigation -->
+        <test-method status="PASS" signature="basePageNavigation(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:RegressionTest.HomePage@34b7ac2f]" name="basePageNavigation" duration-ms="34928" started-at="2019-04-30T17:13:56Z" data-provider="getData" finished-at="2019-04-30T17:14:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[restricitiveuser@facebook.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[678910]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Restrictive User]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- basePageNavigation -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:RegressionTest.HomePage@34b7ac2f]" name="teardown" is-config="true" duration-ms="2519" started-at="2019-04-30T17:14:31Z" finished-at="2019-04-30T17:14:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- RegressionTest.HomePage -->
+    </test> <!-- Validating User Login -->
+    <test name="App Test" duration-ms="0" started-at="2019-04-30T21:14:34Z" finished-at="2019-04-30T21:14:34Z">
+    </test> <!-- App Test -->
+    <test name="Validate Title" duration-ms="26524" started-at="2019-04-30T21:14:34Z" finished-at="2019-04-30T21:15:00Z">
+      <class name="RegressionTest.validateTitle">
+        <test-method status="PASS" signature="initialize()[pri:0, instance:RegressionTest.validateTitle@47e2e487]" name="initialize" is-config="true" duration-ms="22122" started-at="2019-04-30T17:14:34Z" finished-at="2019-04-30T17:14:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method status="FAIL" signature="validateAppTitle()[pri:0, instance:RegressionTest.validateTitle@47e2e487]" name="validateAppTitle" duration-ms="254" started-at="2019-04-30T17:14:56Z" finished-at="2019-04-30T17:14:56Z">
+          <exception class="junit.framework.ComparisonFailure">
+            <message>
+              <![CDATA[expected:<f...> but was:<F...>]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[junit.framework.ComparisonFailure: expected:<f...> but was:<F...>
+	at junit.framework.Assert.assertEquals(Assert.java:81)
+	at junit.framework.Assert.assertEquals(Assert.java:87)
+	at RegressionTest.validateTitle.validateAppTitle(validateTitle.java:29)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+]]>
+            </full-stacktrace>
+          </exception> <!-- junit.framework.ComparisonFailure -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateAppTitle -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:RegressionTest.validateTitle@47e2e487]" name="teardown" is-config="true" duration-ms="2682" started-at="2019-04-30T17:14:58Z" finished-at="2019-04-30T17:15:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- RegressionTest.validateTitle -->
+    </test> <!-- Validate Title -->
+    <test name="Validate Navigation Bar" duration-ms="27771" started-at="2019-04-30T21:15:00Z" finished-at="2019-04-30T21:15:28Z">
+      <class name="RegressionTest.validateNavigationBar">
+        <test-method status="PASS" signature="initialize()[pri:0, instance:RegressionTest.validateNavigationBar@27f981c6]" name="initialize" is-config="true" duration-ms="24063" started-at="2019-04-30T17:15:00Z" finished-at="2019-04-30T17:15:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method status="PASS" signature="validateAppNavigationBar()[pri:0, instance:RegressionTest.validateNavigationBar@27f981c6]" name="validateAppNavigationBar" duration-ms="612" started-at="2019-04-30T17:15:24Z" finished-at="2019-04-30T17:15:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateAppNavigationBar -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:RegressionTest.validateNavigationBar@27f981c6]" name="teardown" is-config="true" duration-ms="3090" started-at="2019-04-30T17:15:25Z" finished-at="2019-04-30T17:15:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- RegressionTest.validateNavigationBar -->
+    </test> <!-- Validate Navigation Bar -->
+  </suite> <!-- Suite -->
+</testng-results>
