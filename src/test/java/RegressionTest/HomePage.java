@@ -34,6 +34,7 @@ public class HomePage extends Base {
 	    System.out.println("The method is to getText");
 	    System.out.println("This is additional branch");
 	    System.out.println("This is developed branch");
+	    System.out.println("This is final master commit");
 	}
 	
 	@AfterTest
