@@ -28,6 +28,8 @@ public class HomePage extends Base {
 	    log.info(text);
 	    LoginPage l = new LoginPage(driver);
 	    l.getLogin().click();
+	    System.out.println("git changes");
+	    System.out.println("This is first commit");
 	}
 	
 	@AfterTest
